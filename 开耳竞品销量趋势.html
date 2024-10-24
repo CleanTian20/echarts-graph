@@ -1,0 +1,166 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=line-simple&code=PYBwLglsB2AEC8sDeBYAULWkwBsCmAXMuppmHgB5hEDkATAMyAuegGyAQ5gLR0AsTAnG0AgKoEGVQDJOgZgDAXOaAAVMB0qoGjYwP1KNErAC-AGlVhgwHJBBFUGUmABOEAOaW8Z2gEMKEAM4qTm1fhvQAJkdWYPvZg9kQA2jQAEgCu9gDueBAcAGJmeHgAxjgQIDQasDQAQsDOeBwAqvpm9rAA8iB40HkFAFKFADIcAMrA0b429mbNNC0AagDCHPWNAKKDw8k4wMEASn3D09DJEGAbDVs7sACCEEP5NEe2wABmOxyA3z6A6ErD9gC2AEYQeDQAuqoeJksFj8xBMmHw12oBQYAFI8gFYBZLAALKE0ACscK0YNg72AYB0r1omPhOIyMBCEGg7Xs7zwOCI5mieH-2LIuhweIo_hx1zwwWiaR5pFIznsADc8EdnABJV72GxGNQI5XuNmwChHJzOYWmACeDVoGWCeEswDMetJIrxfSCFoA4vZDLBrvYcKV1YFgqFYGECnQAAyMDgBgAcw0DwYDfAjQYYHAAjAHY8GEwmU_GE3QU9wQ-nzpHc0GcyGGCWA9xy-jyyxywB2cvhgtBosx86_VkIxwuGl0hlIa4UgDqiRR1BoeJwPhoAMweq1Ll1ZANhAK4rdzKtpHl3NgafRAYDmAA9MfYIBOC0AdsaAB1NL4BgYMAL2qAPujAHb-gABzQDkmoAeBU7JlKFjwHVfQRYwRUwaA3lXKJYgSJJUnSLIci3EUwBXWhsmgb5PVIDC8C6VD8CXMC4ggHwwGRIgGARTBZzAoIQnCWBoGiHAcHyZjWPYli2KY7iuM43iBJYOg-HyOh0XRUS91DOsGHyBNQwDOt5Nk9F8nRBM6ykpMWBYeSEz4BMfmwzB5TMABrAAFYAqShUCwOcPUPj0LoIAAL1XAN8lPWBAGAYwAXU0AFBtAEObD9AHgdajYHon0wkipByXNEEIkLEM2z3Q8A2M2B1xwZlaCOcoABEZVqDgABUZnGSIADkZXGI5mhwWl6SMEASh2KBoFoJFUWaHwXBCaAMk8tQ1D-HEaJVbD7JFCDXig4pSgqKoak2ZD9UNApcPW8EqTwgjVxm4jSPIyjItokVosYjieJu_jbr4wSHoE0MGDUvcEwYUNQ3yOsAwTd6JJYOTYEkhgQe4RSpO4TTlNgbgtNDcaRQu0EwKYyDaDaToeltAYzki1DNpobaTNgXD8L1Qi0fR2ASLIijYCoib1DJq7fTup6xOE7h8hhugftB7gAz0pmGG4d6eHFlTQ1Fxh0RBgG-FFrNGHyBgw0Fug60UsSGBYdFkdIVGjvAzHWgmKZ9jmAmWaJqDSciimDqIkV6dOpnzrZ71wgUvgtZYf6xLoAH5NlwWGAMkH0ToESxP9uGRK0sSJZB7XlbEusE15sX0Th_W-DTkSGCNmjpsiuaoMWZYwDWJoyft9C9p28m9sp6nTdId3GeZ9HUa9BjfT3FgkzEsMvPSkX5JbFTA_k7hhPyQu4aTUNtMkhN9LV2BQ1Dj6DKX7g6HkgXuFL1mQIr82aE2bZdgbtCtubsnnapw7IswbuzpZ_uop9oeGCGU3qDBggZ1Z8CPupJW-QWCQ2PvDBGwC3oSXVtwCW3NvrBwVsHf23NAEpz-mJBMLAkZTUvizSutBb6HBOLbdGjcn6YRbq_DuH86YnR7l7SK7Mwicz4Y9fhAlBHPREXrSB8MkzwIXiwaGf1RYMCziXMhOJO6UIKJcMwNw7hPBbgwkmz8nZtxdjTdGX9PY_29oPXhAibECW4IXeSfADyOJkWHZxsAQ4jzDqGd6mknFhwcR4t6wCFKRxUv9c-Jsr7zQcB8L4ujH76KYS_Ixb9XZdw4d_PuliYqx1kurWOUkNbiIFig-GFZgEK2jOrSOOceaC3RPY-B4s17qwPNpP6gs6w6z5oAyJqhxpqAANxAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-graph-modularity/2/files/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: '23年6月-24年9月各品牌耳机销售趋势'
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Huawei-Freeclip', 'Bose-Ultra Open', 'JBL-Soundgear', 'JVC-OpenEar', 'FloatRun', 'OpenFit', 'OpenFit Air', 'Aerofit-系列', 'ambie']
+  },
+  grid: {
+    left: '3%',
+    right: '5%',
+    bottom: '5%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: [ '2023-08', '2023-09', '2023-10', '2023-11', '2023-12', '2024-01', '2024-02', '2024-03', '2024-04', '2024-05', '2024-06', '2024-07', '2024-08', '2024-09', '']
+  },
+    axisLabel:{fontWeight:'bold'},
+  yAxis: {
+    type: 'value',
+    max: 11500  // 根据数据范围设置最大值
+  },
+  series: [
+    {
+      name: 'Huawei-Freeclip',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [ null, null, null, null, null, null, 629, 2559, 1873, 1807, 1735, 5179, 1066, 1191],
+      markPoint: {
+      symbolSize: 0, // 调整气泡大小
+      data: [
+      {coord: ['2024-09', 1000], value: 'AUDIO-TECHNICA', label: {position: 'right', distance: 0}}]
+      }
+    },
+    {
+      name: 'Bose-Ultra Open',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [ null, null, null, null, null, null, 835, 11388, 7015, 5563, 5933, 4809, 4177, 4798]
+    },
+    {
+      name: 'JBL-Soundgear',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [null, null, 2624, 4128, 5406, 3345, 2434, 1786, 2353, 1596, 1223, 3088, 2780, 2365]
+    },
+    {
+      name: 'JVC-OpenEar',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [1898, 2601, 2215, 1868, 3193, 5229, 2987, 2979, 2453, 2796, 2714, 3357, 3693, 2293]
+    },
+    {
+      name: 'FloatRun',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [ 1610, 2080, 1006, 1024, 1760, 1462, 937, 1089, 1591, 1123, 815, 1119, 942, 1284]
+    },
+    {
+      name: 'OpenFit',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [ 3911, 5320, 3942, 5159, 6482, 4471, 3555, 3445, 2688, 2253, 2298, 2639, 2470, 2168]
+    },
+    {
+      name: 'OpenFit Air',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [null, null, null, null, null, null, null, null, null, 2342, 4102, 4669, 4706, 3713]
+    },
+    {
+      name: 'Aerofit-系列',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [null, null, null, 493, 1950, 1969, 1850, 2161, 1885, 1795, 1893, 2351, 1831, 1701]
+    },
+    {
+      name: 'ambie',
+      type: 'line',
+      lineStyle: {
+        width: 3
+      },
+      data: [2273, 3229, 3042, 2855, 4041, 5309, 3314, 6248, 5492, 3489, 3509, 1708, 778, 439]
+    }
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
